@@ -14,7 +14,7 @@ import array as arr
 a = arr.array('i', [1,2,3,4,5,5,5])
 a.append(6)       # use to insert value from last
 a.insert(2,1110)  # use to insert value while using index can tell the position
-a.pop(-2)         # use wjhen you give  index
+a.pop(-2)         # use when you give  index
 a.remove(4)       # use when you know which element to be removed
 a.reverse()       # use to reverse the array
 print(a.count(5))  # count the no.
