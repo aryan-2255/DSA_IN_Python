@@ -87,4 +87,3 @@ except ValueError:
 
 else:
     print("you can vote")
-
