@@ -87,3 +87,23 @@ except ValueError:
 
 else:
     print("you can vote")
+
+
+
+# nested try and except method
+
+try:
+    try:
+        a = int(input())
+        b = int(input())
+        res = a/b
+
+    except ValueError:
+        print("enter valid input")
+
+    except Exception as e:
+        print()
+
+except ZeroDivisionError:
+    print("enter the deminomenator other than 0")
+        

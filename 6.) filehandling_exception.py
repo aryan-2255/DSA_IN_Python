@@ -13,4 +13,3 @@ else:
 finally:
     fs.close()
     print("task complete file closed")
-
