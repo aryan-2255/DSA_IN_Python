@@ -109,3 +109,12 @@ except ZeroDivisionError:
         
 else:
     print(res)
+
+# Final Flow Summary
+# Outer Try
+#  ├── Runs inner Try
+#  │     ├── Executes code
+#  │     ├── If inner error → Inner Except (if matches)
+#  │     └── If not handled → Goes to Outer Except
+#  ├── If error outside inner → Outer Except
+#  └── Finally blocks (if any) always run
