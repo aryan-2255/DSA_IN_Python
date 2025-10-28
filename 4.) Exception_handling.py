@@ -107,3 +107,5 @@ try:
 except ZeroDivisionError:
     print("enter the deminomenator other than 0")
         
+else:
+    print(res)
