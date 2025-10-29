@@ -13,11 +13,12 @@ pst = classplus()
 
 
 
+
 # question
 
 class Student:
     # Constructor
-    def __init__(self):
+    def __init__(self):             # default constructor-  only self we use
         self.name = input("Enter the name: ")
         self.roll_no = input("Enter the roll number: ")
         self.age = int(input("Enter the age: "))
@@ -39,7 +40,7 @@ s1.display_info() # Display info
 
 class Student:
     # Constructor
-    def __init__(self, n, r, a, g):
+    def __init__(self, n, r, a, g):    # paramatrized constructor - we use other paraameters with self then define it below
         self.name = n
         self.roll_no = r
         self.age = a
@@ -51,7 +52,8 @@ class Student:
 
 
 # main
-s1 = Student("kp", "4cse042", 23, "male")    # object
+
+s1 = Student("kp", "4cse042", 23, "male") 
 s1.display_info()
 
 s2 = Student("nithin", "4cse022", 27, "male")   # object
@@ -125,11 +127,11 @@ class employee:
 
 
 emp1 = employee("ridhi",200,"sales")
-emp1.bonus
-emp1.get_salary
+emp1.bonus()
+emp1.get_salary()
 emp2 = employee("varad", 350,"thakadar")
-emp2.bonuse
-emp2.get_salary
+emp2.bonus()
+emp2.get_salary()
 
 
 # question
