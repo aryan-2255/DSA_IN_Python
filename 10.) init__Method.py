@@ -1,4 +1,4 @@
-# que
+# question
 
 class classplus:
     # attribute
@@ -13,7 +13,7 @@ pst = classplus()
 
 
 
-# que
+# question
 
 class Student:
     # Constructor
@@ -35,7 +35,7 @@ s1.display_info() # Display info
 
 
 
-# que 
+# question
 
 class Student:
     # Constructor
@@ -56,3 +56,77 @@ s1.display_info()
 
 s2 = Student("nithin", "4cse022", 27, "male")   # object
 s2.display_info()
+
+
+
+
+
+
+# question
+
+class lessnumerror(Exception):
+    pass
+class morenumerror(Exception):
+    pass
+n = int(input("enter the number"))
+try:
+    if(n<0):
+        raise lessnumerror("less number error")
+    elif(n>10):
+        raise morenumerror("moer number error")
+except lessnumerror as msg:
+    print(msg)
+except morenumerror as msg:
+    print(msg)
+else:
+    print(n)
+
+
+# question
+
+class laptop:
+    def   __init__(self,b,p):
+        self.brand = b
+        self.price = p
+    def turn_on(self):
+        print(f"{self.brand}laptop is on")
+    def display_info(self):
+        print(f"brand is {self.brand} price is {self.price}")
+
+obj1= laptop("hp", 50000)
+obj1.turn_on
+obj1.display_info
+
+# 
+
+class Laptop:
+    def __init__(self, brand, price):    # constructor
+        print(f"{brand} is the laptop brand and the price is {price}")
+        print(f"{brand} Laptop is now ON!")
+
+# creating objects
+Laptop("apple", 10000)
+Laptop("hp", 100)
+
+
+
+class employee:
+    def __init__(self,n,s,d):
+        self.name =  n
+        self.salary = s
+        self.department = d
+    def bonuse(self):
+        if(self.department == "sales"):
+            self.salary += self.salary*0.1
+        else:
+            self.salary += self.salary*0.5
+    def get_salary(self):
+        print(self.salary)
+
+
+emp1 = employee("ridhi",200,"sales")
+emp1.bonus
+emp1.get_salary
+emp2 = employee("varad", 350,"thakadar")
+emp2.bonuse
+emp2.get_salary
