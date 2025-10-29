@@ -130,3 +130,23 @@ emp1.get_salary
 emp2 = employee("varad", 350,"thakadar")
 emp2.bonuse
 emp2.get_salary
+
+
+# question
+
+class calculator:
+
+    def addition(self,a,b):
+        print(a+b)
+    def subtraction(self,a,b):
+        print(b-a)
+    def multiplication(self,a,b):
+        print(a*b)
+    def division(self,a,b):
+        print(a/b)
+
+c1 = calculator()
+c1.addition(10,20)
+c1.subtraction(10,20)
+c1.multiplication(10,20)
+c1.division(20,10)
