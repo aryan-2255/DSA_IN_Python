@@ -1,80 +1,47 @@
-# class and object
+# What is OOP?
+# OOP stands for Object-Oriented Programming.
 
-# Python is an object oriented programming language.
-
-# Almost everything in Python is an object, with its properties and methods.
-
-# A Class is like an object constructor, or a "blueprint" for creating objects.
+# Python is an object-oriented language, allowing you to structure your code using classes and objects for better organization and reusability.
 
 
 
 
-
-class student:
-    #attributes
-    roll_no = 0
-    name = ""
-    age = ""
-    gender = ""
+# Advantages of OOP
 
 
-s1 = student() #object
-s1.name = "hari"
-s1.roll_no = 78
-
-s2 = student() #object
-s2.name = "aryan"
+# Provides a clear structure to programs
+# Makes code easier to maintain, reuse, and debug
+# Helps keep your code DRY (Don't Repeat Yourself)
+# Allows you to build reusable applications with less code
 
 
-print(s1.roll_no)
-print(s2.name)
+# Tip: The DRY principle means you should avoid writing the same code more than once. Move repeated code into functions or classes and reuse it.
 
 
+# 👉 In short:
+# OOP = Data (variables) + Behavior (functions) together in one unit (object)
 
+# It makes code:
 
-class student:
-    #attributes
-    roll_no = 0
-    name = ""
-    age = ""
-    gender = ""
+# Easier to understand
 
-    def display_info(self):           # self- referces current instance of class
-     print(self.name,self.roll_no)
+# Reusable
 
+# Scalable
 
-s1 = student() #object
-s1.name = "hari"
-s1.roll_no = 78
-
-s2 = student() #object
-s2.name = "aryan"
-
-
-print(s1.roll_no)
-print(s2.name)
+# Maintainable
 
 
 
+# 🧠 Summary Table
 
-class student:
-    #attributes
-    roll_no =0
-    name=""
-    age=""
-    gender=""
-    #method 1
-    #self refers to the current instance of the class
-    def display_info(self):
-        print(self.name, self.roll_no, self.age, self.gender)
-    #method 2
-    def set_info(self):
-        self.name = input("Enter the student name")
-        self.roll_no = input("Enter the Roll Number")
-        self.age = input("Enter the Age")
-        self.gender = input("Enter the gender")
+# Concept.     	Meaning	    Keyword / Function	      Example
 
-s1 = student()
-
-s1.set_info()
-s1.display_info()
+# Class.    	Blueprint	    class	              class Student:
+# Object	Instance of class	Variable = Class()	s1 = Student()
+# Constructor	Initializes object	 __init__()	
+# Destructor	Destroys object	__del__()	
+# Encapsulation	Data hiding	__var, getters/setters	
+# Abstraction	Hiding internal details	ABC, @abstractmethod	
+# Inheritance	Reuse parent code	class B(A)	
+# Polymorphism	Same name, different behavior	Method overriding	
