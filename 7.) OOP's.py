@@ -33,15 +33,19 @@
 
 
 
-# 🧠 Summary Table
+# 🧠 OOP Summary Table
 
-# Concept.     	Meaning	    Keyword / Function	      Example
-
-# Class.    	Blueprint	    class	              class Student:
-# Object	Instance of class	Variable = Class()	s1 = Student()
-# Constructor	Initializes object	 __init__()	
-# Destructor	Destroys object	__del__()	
-# Encapsulation	Data hiding	__var, getters/setters	
-# Abstraction	Hiding internal details	ABC, @abstractmethod	
-# Inheritance	Reuse parent code	class B(A)	
-# Polymorphism	Same name, different behavior	Method overriding	
+"""
+------------------------------------------------------------
+| Concept       | Meaning                     | Keyword / Function         | Example              |
+------------------------------------------------------------
+| Class         | Blueprint                   | class                      | class Student:       |
+| Object        | Instance of class            | Variable = Class()         | s1 = Student()       |
+| Constructor   | Initializes object           | __init__()                 |                      |
+| Destructor    | Destroys object              | __del__()                  |                      |
+| Encapsulation | Data hiding                  | __var, getters/setters     |                      |
+| Abstraction   | Hiding internal details      | ABC, @abstractmethod       |                      |
+| Inheritance   | Reuse parent code            | class B(A)                 |                      |
+| Polymorphism  | Same name, different behavior| Method overriding          |                      |
+------------------------------------------------------------
+"""
