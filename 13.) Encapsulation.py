@@ -28,6 +28,35 @@
 
 class person:
     def __init__(self):
+        # public attribute
         self.name ="hari"
+
+        # private attribute
         self.__atmpin = "2255"
-        
+
+      # public mehod
+    def print_info(self):
+        print("information about person")
+       # private method
+    def __display_info(self):
+        print("display info about person")
+
+       # getter function 
+    def get_atmpin(self):
+        print(self.__atmpin)
+        # setter function
+    def set_atmpin(self, new_pin):
+         self.__atmpin = new_pin
+
+
+
+p1 = person()
+p1.print_info()                   # ✅ works
+print(p1.name)                    # ✅ works
+
+# print(p1.__atmpin)              # ❌ error
+# p1.__display_info()             # ❌ error
+
+p1.set_atmpin(9876)   # update the private attribte
+p1.get_atmpin()       # accessed the private attribute
+
