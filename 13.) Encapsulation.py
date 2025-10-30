@@ -59,4 +59,3 @@ print(p1.name)                    # ✅ works
 
 p1.set_atmpin(9876)   # update the private attribte
 p1.get_atmpin()       # accessed the private attribute
-
