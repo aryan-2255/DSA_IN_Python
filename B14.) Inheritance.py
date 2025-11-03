@@ -64,12 +64,14 @@ class vehicle():
 
 # Child class (inherits from Vehicle)
 class car(vehicle):
-    def start(self):
-        print(f"{self.brand} car key inserted, color: {self.color}")
+    def start(self,tyre):
+        self.tyre = tyre
+        print(f"{self.brand} car key inserted, color: {self.color}, tyre count: {tyre}")
 
 # Create object of Car
 car_obj = car("toyota","red")
-car_obj.start()          # from Car class
+
+car_obj.start(10)          # from Car class
 car_obj.key_insert()     # inherited from Vehicle
 car_obj.Break()          # inherited from Vehicle
 
