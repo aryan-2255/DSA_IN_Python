@@ -55,13 +55,59 @@ class vehicle():
         self.brand = b
         self.color = c
 
-    def start (self):
+    def key_insert(self):
         print("vechile is started")
 
     def Break (self):
-        print("vichle is started")
+        print("vechicle is stoped")
 
-    class car(vehicle):
-        pass
-    car_obj = car("toyota","red")
-    car_obj.key_insert()
+
+# Child class (inherits from Vehicle)
+class car(vehicle):
+    def start(self):
+        print(f"{self.brand} car key inserted, color: {self.color}")
+
+# Create object of Car
+car_obj = car("toyota","red")
+car_obj.start()          # from Car class
+car_obj.key_insert()     # inherited from Vehicle
+car_obj.Break()          # inherited from Vehicle
+
+
+
+
+
+# 🔹 Types of Inheritance:
+
+# 🧱 1️⃣ SINGLE INHERITANCE
+# A  →  B
+# (One parent → One child)
+
+
+# 🧱 2️⃣ MULTILEVEL INHERITANCE
+# A  →  B  →  C
+# (Grandparent → Parent → Child)
+
+
+# 🧱 3️⃣ MULTIPLE INHERITANCE
+#    A
+#    B
+#     ↘
+#       C
+# (One child inherits from two parents)
+
+
+# 🧱 4️⃣ HIERARCHICAL INHERITANCE
+#       A
+#      / \
+#     B   C
+# (One parent → multiple children)
+
+
+# 🧱 5️⃣ HYBRID INHERITANCE
+#         A
+#        / \
+#       B   C
+#        \ /
+#         D
+# (Combination of multiple + hierarchical)
