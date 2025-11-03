@@ -79,17 +79,17 @@ car_obj.Break()          # inherited from Vehicle
 
 # 🔹 Types of Inheritance:
 
-# 🧱 1️⃣ SINGLE INHERITANCE
+# 1️⃣ SINGLE INHERITANCE
 # A  →  B
 # (One parent → One child)
 
 
-# 🧱 2️⃣ MULTILEVEL INHERITANCE
+# 2️⃣ MULTILEVEL INHERITANCE
 # A  →  B  →  C
 # (Grandparent → Parent → Child)
 
 
-# 🧱 3️⃣ MULTIPLE INHERITANCE
+# 3️⃣ MULTIPLE INHERITANCE
 #    A
 #    B
 #     ↘
@@ -97,14 +97,14 @@ car_obj.Break()          # inherited from Vehicle
 # (One child inherits from two parents)
 
 
-# 🧱 4️⃣ HIERARCHICAL INHERITANCE
+# 4️⃣ HIERARCHICAL INHERITANCE
 #       A
 #      / \
 #     B   C
 # (One parent → multiple children)
 
 
-# 🧱 5️⃣ HYBRID INHERITANCE
+# 5️⃣ HYBRID INHERITANCE
 #         A
 #        / \
 #       B   C
