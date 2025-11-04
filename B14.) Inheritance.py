@@ -128,7 +128,6 @@ car_obj.Break()          # inherited from Vehicle
 # | Use in inheritance              | ClassName not needed | 
 # | Works with multiple inheritance | ✅ Yes                |
 
-
 class Parent:
     def __init__(self):
         print("Parent constructor called")
@@ -174,4 +173,38 @@ obj = Child()
 obj.show_grandparent()  # inherited from Grandparent
 obj.show_parent()       # inherited from Parent
 obj.show_child()        # defined in Child
+
+
+
+# # Hierarchical Inheritance
+
+# Parent class
+class Animal:
+    def speak(self):
+        print("Animals can make sounds")
+
+# Child class 1
+class Dog(Animal):
+    def speak(self):
+        print("Dog says: Woof! Woof!")
+
+# Child class 2
+class Cat(Animal):
+    def speak(self):
+        print("Cat says: Meow!")
+
+# Child class 3
+class Cow(Animal):
+    def speak(self):
+        print("Cow says: Moo!")
+
+# Create objects
+d = Dog()
+c = Cat()
+cw = Cow()
+
+# Call their methods
+d.speak()
+c.speak()
+cw.speak()
 
