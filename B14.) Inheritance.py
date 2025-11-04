@@ -113,3 +113,65 @@ car_obj.Break()          # inherited from Vehicle
 #        \ /
 #         D
 # (Combination of multiple + hierarchical)
+
+
+
+
+# # super
+
+# super is used inside a subclass (child class) to refer to the parent class (also called the superclass).
+
+# | Purpose                         | Python Syntax        | 
+# | ------------------------------- | -------------------- | 
+# | Call parent constructor         | `super().__init__()` | 
+# | Call parent method              | `super().method()`   |
+# | Use in inheritance              | ClassName not needed | 
+# | Works with multiple inheritance | ✅ Yes                |
+
+
+class Parent:
+    def __init__(self):
+        print("Parent constructor called")
+
+    def show(self):
+        print("This is the parent method")
+
+class Child(Parent):
+    def __init__(self):
+        # Call parent constructor
+        super().__init__()
+        print("Child constructor called")
+
+    def show(self):
+        # Call parent version of show()
+        super().show()
+        print("This is the child method")
+
+# Create object
+obj = Child()
+obj.show()
+
+
+
+
+# multi level inheritance
+
+class Grandparent:
+    def show_grandparent(self):
+        print("I am the Grandparent")
+
+class Parent(Grandparent):
+    def show_parent(self):
+        print("I am the Parent")
+
+class Child(Parent):
+    def show_child(self):
+        print("I am the Child")
+
+# Create object of the Child class
+obj = Child()
+
+obj.show_grandparent()  # inherited from Grandparent
+obj.show_parent()       # inherited from Parent
+obj.show_child()        # defined in Child
+
