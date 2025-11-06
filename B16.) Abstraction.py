@@ -68,3 +68,48 @@ car.stop()
 
 bike.start()
 bike.stop()
+
+
+
+# # ex 
+
+
+from abc import ABC, abstractmethod
+
+class shape(ABC):
+    def __init__(self, c):
+        self.color = c
+
+    @abstractmethod
+    def area(self):
+        pass
+
+    def display_color(self):
+        pass
+
+
+class circle(shape):
+    def __init__(self, r):
+        self.radius = r
+
+    def area(self):
+       print(f" area of circle id {3.14*self.radius**2}")
+
+
+class rectangle(shape):
+    def __init__(self, l, b):
+        self.length = l
+        self.breadth = b
+
+    def area(self):
+        print(f"area of rectangle is {self.length*self.breadth}")
+
+
+co = circle(10)
+co.area()
+
+
+        
+
+
+
