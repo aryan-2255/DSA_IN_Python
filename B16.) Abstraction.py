@@ -109,7 +109,3 @@ co = circle(10)
 co.area()
 
 
-        
-
-
-
